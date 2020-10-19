@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="pagina_web.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="transition.min.js"></script>
+<script src="collapse.min.js"></script>
+<script src="dropdown.min.js"></script>
+<script src="wb.conveyerbelt.min.js"></script>
+<script src="wwb15.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#wb_FontAwesomeIcon8').addClass('visibility-hidden');
+   $('#wb_FontAwesomeIcon10').addClass('visibility-hidden');
+   $('#wb_FontAwesomeIcon11').addClass('visibility-hidden');
+   function onScrollFontAwesomeIcon8()
+   {
+      var $obj = $("#wb_FontAwesomeIcon8");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_FontAwesomeIcon8', 'transform-lightspeed-in', 200, 1000);
+      }
+   }
+   onScrollFontAwesomeIcon8();
+   $(window).scroll(function(event)
+   {
+      onScrollFontAwesomeIcon8();
+   });
+   function onScrollFontAwesomeIcon10()
+   {
+      var $obj = $("#wb_FontAwesomeIcon10");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_FontAwesomeIcon10', 'transform-lightspeed-in', 300, 1000);
+      }
+   }
+   onScrollFontAwesomeIcon10();
+   $(window).scroll(function(event)
+   {
+      onScrollFontAwesomeIcon10();
+   });
+   function onScrollFontAwesomeIcon11()
+   {
+      var $obj = $("#wb_FontAwesomeIcon11");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_FontAwesomeIcon11', 'transform-lightspeed-in', 400, 1000);
+      }
+   }
+   onScrollFontAwesomeIcon11();
+   $(window).scroll(function(event)
+   {
+      onScrollFontAwesomeIcon11();
+   });
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $(document).on('click','.ThemeableMenu1-navbar-collapse.in',function(e)
+   {
+      if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
+      {
+         $(this).collapse('hide');
+      }
+   });
+   $("#SlideShow1").conveyerbelt({speed:3, spacing: 5});
+});
+</script>
+</head>
+<body>
+<a href="" target="_blank"><img src="images/builtwithwwb15.png" alt="" style="position:absolute;left:441px;top:967px;margin: 0;border-width:0;z-index:250"></a>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+<div id="wb_Breadcrumb1" style="display:inline-block;width:100%;z-index:0;vertical-align:top;">
+<ul id="Breadcrumb1">
+<li><a href="http://"> BIENVENIDOS a </a></li>
+</ul>
+
+</div>
+<div id="wb_FontAwesomeIcon1" style="display:inline-block;width:40px;height:40px;text-align:center;z-index:1;">
+<a href="file://file:///C:/xampp/htdocs/paginaweb/sesion/index.php"><div id="FontAwesomeIcon1"><i class="fa fa-user-circle-o"></i></div></a>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:1002;">
+<div id="ThemeableMenu1" class="ThemeableMenu1" style="width:100%;height:auto !important;">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ThemeableMenu1-navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="ThemeableMenu1-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="">
+<a href="./index.html#home">inicio</a>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Servicios<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="./index.html#services1">Deportivos</a></li>
+<li><a href="./index.html#services1">Casuales</a></li>
+</ul>
+</li>
+<li class="">
+<a href="./index.html#contact">Contact</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_FontAwesomeIcon8" style="display:inline-block;width:25px;height:20px;text-align:center;z-index:3;">
+<a href="./index.html"><div id="FontAwesomeIcon8"><i class="fa fa-cc-paypal"></i></div></a>
+</div>
+<div id="wb_FontAwesomeIcon10" style="display:inline-block;width:23px;height:23px;text-align:center;z-index:4;">
+<a href="./index.html"><div id="FontAwesomeIcon10"><i class="fa fa-cc-visa"></i></div></a>
+</div>
+<div id="wb_FontAwesomeIcon11" style="display:inline-block;width:25px;height:24px;text-align:center;z-index:5;">
+<a href="./index.html"><div id="FontAwesomeIcon11"><i class="fa fa-whatsapp"></i></div></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Image1" style="position:absolute;left:215px;top:163px;width:868px;height:482px;z-index:8;">
+<img src="images/5765467.jpg" id="Image1" alt=""></div>
+<div id="wb_Image2" style="position:absolute;left:233px;top:645px;width:832px;height:404px;z-index:9;">
+<img src="images/porta.JPG" id="Image2" alt=""></div>
+<div id="SlideShow1" style="position:absolute;left:434px;top:1082px;width:430px;height:268px;overflow:hidden;z-index:10;">
+<img class="image" src="images/29dceecd7f13a9869c30a8d3b8a86064.jpg" alt="" title="">
+<img class="image" src="images/1200px-Adidas_Logo.svg.png" style="display:none;" alt="" title="">
+<img class="image" src="images/1200px-Converse-Logo.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/29a3a7b92a39a77bff9d6773882f6746.png" style="display:none;" alt="" title="">
+<img class="image" src="images/2895b1ef778d454acb57b4e6ea3c5573.png" style="display:none;" alt="" title="">
+<img class="image" src="images/c5e3164b5718628a8d1ff3af5c9febff.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/puma-logo.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/El-logo-de-Lacoste-proviene-del-apodo-de-su-fundador2.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/logodc.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/0bbc96e1c3f9a08fe299683efd0110f8.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/8639680739_32c2654101_o.jpg" style="display:none;" alt="" title="">
+</div>
+<div id="wb_Image3" style="position:absolute;left:84px;top:1454px;width:249px;height:380px;z-index:11;">
+<img src="images/20.png" id="Image3" alt=""></div>
+<div id="wb_Image4" style="position:absolute;left:369px;top:1454px;width:251px;height:380px;z-index:12;">
+<img src="images/14.png" id="Image4" alt=""></div>
+<div id="wb_Image5" style="position:absolute;left:647px;top:1454px;width:253px;height:381px;z-index:13;">
+<img src="images/wook.JPG" id="Image5" alt=""></div>
+<div id="wb_Image6" style="position:absolute;left:927px;top:1454px;width:241px;height:380px;z-index:14;">
+<img src="images/19.png" id="Image6" alt=""></div>
+<div id="wb_Image7" style="position:absolute;left:84px;top:1876px;width:250px;height:386px;z-index:15;">
+<img src="images/4.JPG" id="Image7" alt=""></div>
+<div id="wb_Image8" style="position:absolute;left:369px;top:1879px;width:251px;height:381px;z-index:16;">
+<img src="images/6.JPG" id="Image8" alt=""></div>
+<div id="wb_Image9" style="position:absolute;left:647px;top:1879px;width:253px;height:381px;z-index:17;">
+<img src="images/1.JPG" id="Image9" alt=""></div>
+<div id="wb_Image10" style="position:absolute;left:928px;top:1877px;width:240px;height:385px;z-index:18;">
+<img src="images/25.png" id="Image10" alt=""></div>
+<div id="wb_Image11" style="position:absolute;left:84px;top:2318px;width:250px;height:384px;z-index:19;">
+<img src="images/3.JPG" id="Image11" alt=""></div>
+<div id="wb_Image12" style="position:absolute;left:369px;top:2317px;width:253px;height:387px;z-index:20;">
+<img src="images/Cii.JPG" id="Image12" alt=""></div>
+<div id="wb_Image13" style="position:absolute;left:647px;top:2318px;width:253px;height:384px;z-index:21;">
+<img src="images/7.JPG" id="Image13" alt=""></div>
+<div id="wb_Image14" style="position:absolute;left:927px;top:2318px;width:237px;height:384px;z-index:22;">
+<img src="images/pu.JPG" id="Image14" alt=""></div>
+</body>
+</html>
